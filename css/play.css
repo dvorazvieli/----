@@ -1,0 +1,60 @@
+h1,h2{
+    font-family: cursive;
+}
+
+body{
+    background-color: rgb(254, 254, 210);
+}
+
+.main{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    background-color: rgb(194, 238, 252);
+    margin-bottom: 10px;
+}
+
+.gamebord{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(254, 254, 210);
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 150px;
+    border: 5px solid lightskyblue;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.img{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.img2{
+    display: none;
+}
+
+select{
+    width: 150px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

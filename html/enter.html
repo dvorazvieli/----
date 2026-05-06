@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/enter.css">
+    <script src="../js/enter.js" defer></script>
+</head>
+<body>
+    <div class="container" >
+        <img src="./תמונות/TAKI_logo.png" alt="לוגו" class="logo-top-right">
+        <div class="form-wrapper" id="login-form">
+            <h2>התחברות</h2>
+            <div class="form-group">
+                <label for="login-username" >שם משתמש או אימייל:</label>
+                <input type="email" id="login-username" name="login-username" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">סיסמה:</label>
+                <input type="password" id="login-password" name="login-password" required>
+                <p id="password-error" style="color:red;"></p>
+            </div>
+            <button id="login-button" onclick="login()">התחבר</button>
+            <div class="switch-form">אין לך חשבון?
+                <a href="#" id="show-register-form" onclick="ShowRegisterForm()"> הרשם עכשיו</a>
+            </div>
+        </div>
+
+        <div class="form-wrapper" id="registration-form" style="display:none;">
+            <h2>הרשמה</h2>
+            <div class="form-group">
+                <label for="register-username">שם משתמש:</label>
+                <input type="text" id="register-username" name="register-username" required>
+            </div>
+            <div class="form-group">
+                <label for="register-email">אימייל:</label>
+                <input type="email" id="register-email" name="register-email" required>
+            </div>
+            <div class="form-group">
+                <label for="register-password">סיסמה:</label>
+                <input type="password" id="register-password" name="register-password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">אישור סיסמה:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button id="register-button" onclick="register()">הרשם</button>
+            <div class="switch-form">
+                כבר יש לך חשבון? <a href="#" id="show-login-link" onclick="showloginform()">התחבר כאן</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
